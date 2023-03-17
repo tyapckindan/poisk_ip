@@ -15,7 +15,7 @@ internal class Program
 
         Regex regexIp = new(@"\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b");
 
-        Console.WriteLine("Истинные айпишники: ");
+        Console.WriteLine("Истинные айпишники:");
 
         MatchCollection matches = regexIp.Matches(buffer);
         if (matches.Count > 0)
